@@ -1,3 +1,13 @@
 <div
+  class="div-one"
   (click)="divClicked = true"
-  [ngStyle]="{'background-color': divClicked ? 'tomato' : 'alicewhite'}"></div>
+  [ngClass]="{marked: divClicked}"
+  [ngStyle]="{'background-color': divClicked ? 'tomato' : 'alicewhite'}">
+</div>
+<hr>
+<div
+  (click)="doAnimate = true"
+  [ngClass]="{animate: doAnimate}"
+  class="div-two">
+</div>
+
